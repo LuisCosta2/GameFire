@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+  body {
+    background-color: #201e1e;
+  }
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(22, 22, 22);
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+.center {
+  padding-left: 50px;
+}
+
+.topnav a:hover {
+  border-radius: 25px;
+  background-color: #ddd;
+  color: rgb(0, 110, 255);
+}
+
+.site-logo {
+  display: inline-block;
+  float: left;
+  padding-top: 6px;
+
+}
+.site-logo  a:hover{
+  background-color: transparent;
+} 
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.linear{
+  background-image: radial-gradient(rgb(0, 110, 255), blue);
+  color: #ddd;
+}
+/* Config dos jogos geral */
+.product {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding-left: 3px;
+  display: flex;
+  position: relative;
+  background-position: auto;
+  flex-wrap: wrap;
+}
+
+
+/* posição das Imagem dos jogos config*/
+.center{
+  padding-left: none;
+}
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right : 30px;
+}
+/* posição das Imagem dos jogos config*/
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  
+}
+/*Imagem dos jogos config*/
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*Tags configuração */
+.discount-tag {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  color: #0004ff;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+
+a{
+  text-decoration: none;
+}
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.text{
+  color: rgb(255, 255, 255);
+}
+
+.footer-section {
+	background: #000000;
+	padding: 18px 0;
+  color:rgb(255, 255, 255);
+  padding-left: 40%;
+}

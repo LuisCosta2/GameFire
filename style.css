@@ -1,0 +1,344 @@
+/* HEADER */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*cor de fundo*/
+body {
+  background-color: #201e1e;
+}
+
+/*pag inicial imagem de fundo*/
+.banner {
+  width: 100%;
+  height: 80vh;
+  background-image: url(img/fundo/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.topnav {
+  text-align: center;
+  float: left;
+
+  
+}
+
+.topnav a {
+  float: left;
+  float: right;
+  display: block;
+  color: rgb(243, 236, 236);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-radius: 25px;
+  background-color: #ddd;
+  color: rgb(0, 110, 255);
+}
+
+
+/*tela para telemovel*/
+@media screen and (max-width: 510px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .search-container button {
+
+    float: none;
+    display: block;
+
+    margin: 0;
+    padding: 14px;
+    margin-left: 35px;
+
+  }
+
+  .center {
+    padding-left: 55px;
+  }
+
+  .menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  float: left;
+  padding-top: 6px;
+
+}
+.site-logo  a:hover{
+  background-color: transparent;
+} 
+
+/*cabeçalho configurações*/
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Header configs*/
+.logo {
+  width: 500px;
+  cursor: pointer;
+}
+
+/*configuração da posição das secções*/
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+/*Linha abaixo do texto header*/
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+
+}
+
+.linear {
+  background-image: radial-gradient(rgb(0, 110, 255), blue);
+  color: #ddd;
+}
+
+/*Tela inicial posição da logo e do comentario abaixo*/
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/*logo posição config*/
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+
+/*texto abaixo da logo*/
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  text-size-adjust: 25px;
+  color: #fff;
+}
+
+/*tamanho do texto pg inicial*/
+.pa {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*login butão config*/
+.login-btn {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-color: #fff;
+}
+
+/*signup butão config*/
+.signup-btn {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: #ffffff00;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-color: #fff;
+}
+
+/*cor quando passa o ratop em cima*/
+.cover {
+  background: #0065fd;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+
+  border: none;
+  background-color: #001aff;
+}
+
+/* Config dos jogos geral */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Titulo das analises*/
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+/*posição das colunas*/
+.product-container {
+  padding-left: 3px;
+  display: flex;
+  position: relative;
+  background-position: auto;
+  flex-wrap: wrap;
+
+}
+
+/* posição das Imagem dos jogos config*/
+.center {
+  padding-left: 55px;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 30px;
+}
+
+/* posição das Imagem dos jogos config*/
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+/*Imagem dos jogos config*/
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Tags configuração */
+.tag {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 5px;
+  color: #0400ff;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+
+/*Analise cor*/
+.card-btn:hover {
+  background: #001aff;
+  color: #fff;
+}
+
+/*Informações do produto*/
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.description {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+}
+
+/*MAIS JOGOS IMAGENS DE FUNDO*/
+.maisjogos {
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+/*Cor de texto na 2 imagem*/
+
+
+/*RODAPE CONFIGS*/
+footer {
+  background: #000000;
+  padding: 18px 0;
+  color: #fff;
+  text-align: center;
+
+}
